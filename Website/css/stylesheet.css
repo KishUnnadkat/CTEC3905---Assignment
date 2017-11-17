@@ -58,10 +58,44 @@ section h1 {
   background: url("../img/mainDisplay.jpg") no-repeat;
   background-size: cover;
 }
-
 #informationText {
   position: relative;
   top: 30%;
   font-size: 15px;
 }
 
+/* Portfolio styles here */
+#portfolio h1 {
+  color: black;
+}
+
+
+
+/* About Me styles here */
+#about {
+  background-color: #18BC9C;
+  font-size: 15px;
+  text-align: center;
+  padding: 40px;
+}
+#profilePic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+p {
+  text-align: justify;
+}
+#downloadCV {
+  color: white;
+  font-size: 20px;
+  border: 2px solid white;
+  background: transparent;
+  float: left;
+  transition: all 0.3s ease-in-out;
+}
+#downloadCV:hover {
+  color: #18BC9C;
+  background: white;
+  cursor: pointer;
+}
