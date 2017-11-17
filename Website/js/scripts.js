@@ -2,7 +2,7 @@
   
   // Function that appends 'responsive' to the classname when hamburger menu has been clicked on
   function clickHamburgerMenu() {
-    var navBar = document.getElementById("topNavigationBar");
+    let navBar = document.getElementById("topNavigationBar");
     if (navBar.className === "topNavigation") {
       navBar.className += " responsive";
     } else {
