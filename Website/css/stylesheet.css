@@ -99,3 +99,40 @@ p {
   background: white;
   cursor: pointer;
 }
+
+/* Contact Me styles go here... */
+#contact h1 {
+  color: black;
+}
+
+/* Extra Info Section styles here */
+#extraInfo {
+  display:flex;
+  justify-content:space-around;
+  padding: 35px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.socialMediaLinks {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.socialMediaLinks a {
+  text-decoration: none;
+  color: white;
+}
+.socialMediaLinks a:hover {
+  color: #18BC9F;
+}
+
+/* Footer styles go here... */
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 10px 0;
+}
