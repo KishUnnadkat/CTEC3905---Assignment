@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">           <!-- Import stylesheet.css !-->
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">           <!-- Import stylesheet.css !-->  
     <title>Kishan Unnadkat | Web Portfolio</title>
   </head>
   
@@ -59,6 +59,7 @@
       <div id="location">
         <h3>Location</h3>
         <span>Romford,<br>Essex</span>
+        <div id="map"></div>
       </div>
 
       <div id="socialMediaInfo">
@@ -82,8 +83,11 @@
       <span>Copyright 2017 © Kishan Unnadkat</span>
     </footer>
 
-    <!-- Import scripts.js at the end after content loaded on page!-->
+    <!-- Import scripts.js at the end after DOM content has loaded fully -->
     <script src="js/scripts.js"></script>
+
+    <!-- Import google maps api javascript and use initMap (defined in scripts.js) as callback function -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlaMRcYau_HzL6YJozCxU46v5Ruz2-clI&callback=initMap"></script>
   </body>
 
 </html>

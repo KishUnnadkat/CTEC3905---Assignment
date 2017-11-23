@@ -1,5 +1,22 @@
+
+// This function initMap() needs to be in the global scope of the javascript so the callback for googlemaps api can work properly.
+function initMap() {
+  var uluru = {
+    lat: 51.5751,
+    lng: 0.1858
+  };
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 10,
+    center: uluru
+  });
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map
+  });
+}
+
+// All functions/event handlers will be added automatically
 (function() {
-  
   // Function that appends 'responsive' to the classname when hamburger menu has been clicked on
   function clickHamburgerMenu() {
     let navBar = document.getElementById('topNavigationBar');
@@ -22,5 +39,4 @@
   document.getElementById('downloadCV').addEventListener('click', function() {
     window.location = "misc/Kishans%20CV.pdf";
   });
-
 })();
