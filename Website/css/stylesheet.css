@@ -42,6 +42,8 @@ html, body {
 
 /* Generic styles for all sections */
 section {
+  padding: 40px;
+  padding-top: 25px;
   background-color: white;
 }
 section h1 {
@@ -69,14 +71,11 @@ section h1 {
   color: black;
 }
 
-
-
 /* About Me styles here */
 #about {
   background-color: #18BC9C;
   font-size: 15px;
   text-align: center;
-  padding: 40px;
 }
 #profilePic {
   width: 150px;
@@ -100,9 +99,27 @@ p {
   cursor: pointer;
 }
 
-/* Contact Me styles go here... */
+/* Contact Me styles here */
 #contact h1 {
   color: black;
+}
+input[type=text], textarea {
+  height: 200px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 5px;
+  resize: vertical;
+}
+input[type=submit] {
+  padding: 10px;
+  float: left;
+  background-color: #f2f2f2;
+}
+input[type=submit]:hover {
+  background-color: #18BC9F;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Extra Info Section styles here */

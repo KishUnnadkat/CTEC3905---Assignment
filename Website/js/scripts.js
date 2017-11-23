@@ -1,21 +1,23 @@
-
-// This function initMap() needs to be in the global scope of the javascript so the callback for googlemaps api can work properly.
+/* 
+  This function initMap() needs to be in the global scope of the javascript so the callback for googlemaps api can work properly.
+  Changed to use let instead of var 
+*/
 function initMap() {
-  var uluru = {
+  let uluru = {
     lat: 51.5751,
     lng: 0.1858
   };
-  var map = new google.maps.Map(document.getElementById('map'), {
+  let map = new google.maps.Map(document.getElementById('map'), {
     zoom: 10,
     center: uluru
   });
-  var marker = new google.maps.Marker({
+  let marker = new google.maps.Marker({
     position: uluru,
     map: map
   });
 }
 
-// All functions/event handlers will be added automatically
+// All functions/event handlers will be added automatically when this javascript file has been added
 (function() {
   // Function that appends 'responsive' to the classname when hamburger menu has been clicked on
   function clickHamburgerMenu() {
