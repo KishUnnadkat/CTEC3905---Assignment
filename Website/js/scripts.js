@@ -37,19 +37,26 @@ function initMap() {
     let modalDialog = document.getElementById('modalDialog');
     modalDialog.style.display = 'block';
   }
-  document.getElementById('rockPaperScissorsDiv').addEventListener('click', openModal1);
-
-  function closeBtnOnModal() {
-    let closeBtn = document.getElementById('closeBtn'),
-        modalDialog = document.getElementById('modalDialog');
+  document.getElementById('rockPaperScissorsImg').addEventListener('click', openModal1);
+  function closeBtnOnModal1() {
+    let modalDialog = document.getElementById('modalDialog');
     modalDialog.style.display = 'none';
   }
-  document.getElementById('closeBtn').addEventListener('click', closeBtnOnModal);
+  document.getElementById('closeBtn').addEventListener('click', closeBtnOnModal1);
 
 
 
-
-
+  // Open Modal Dialog2
+  function openModal2() {
+    let modalDialog = document.getElementById('modalDialog1');
+    modalDialog.style.display = 'block';
+  }
+  document.getElementById('computerScienceModuleChooserImg').addEventListener('click', openModal2);
+  function closeBtnOnModal2() {
+    let modalDialog = document.getElementById('modalDialog1');
+    modalDialog.style.display = 'none';
+  }
+  document.getElementById('closeBtn1').addEventListener('click', closeBtnOnModal2);
 
   /*  
     This is an anonymous function as it has no name and is declared all at once.
