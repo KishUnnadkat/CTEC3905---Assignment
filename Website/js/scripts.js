@@ -28,10 +28,29 @@ function initMap() {
       navBar.className = 'topNavigation';
     }
   }
-
   // Add event listener so when responsive menu clicked on, runs clickHamburgerMenu function
   document.getElementById('responsiveIcon').addEventListener('click', clickHamburgerMenu);
   
+
+  // Open Modal Dialog1
+  function openModal1() {
+    let modalDialog = document.getElementById('modalDialog');
+    modalDialog.style.display = 'block';
+  }
+  document.getElementById('rockPaperScissorsDiv').addEventListener('click', openModal1);
+
+  function closeBtnOnModal() {
+    let closeBtn = document.getElementById('closeBtn'),
+        modalDialog = document.getElementById('modalDialog');
+    modalDialog.style.display = 'none';
+  }
+  document.getElementById('closeBtn').addEventListener('click', closeBtnOnModal);
+
+
+
+
+
+
   /*  
     This is an anonymous function as it has no name and is declared all at once.
     It has been done like this because the event only needs one line of code and is just as easy

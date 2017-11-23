@@ -70,6 +70,55 @@ section h1 {
 #portfolio h1 {
   color: black;
 }
+.portfolioIcon {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  transition: all 0.3s ease-in-out;
+}
+.portfolioIcon:hover {
+  opacity: 0.7;
+}
+
+.container-popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,.8);
+  display: none;
+}
+.popup {
+  width: 70%;
+  height: 70%;
+  padding: 10px;
+  background: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.popup h1 {
+  margin: 20px 0;
+}
+.popup p {
+  color: black;
+  margin-top: 20px;
+}
+#closeBtn {
+  float: right;
+}
+.modalPicture {
+  display: block;
+  width: 75%;
+  margin: 20px auto;
+}
+
+
+
 
 /* About Me styles here */
 #about {
@@ -103,8 +152,10 @@ p {
 #contact h1 {
   color: black;
 }
-input[type=text], textarea {
+textarea {
   height: 200px;
+}
+input[type=text], textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
