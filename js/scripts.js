@@ -19,7 +19,23 @@ function initMap() {
 
 // All functions/event handlers will be added automatically when this javascript file has been added
 (function() {
-  // Function that appends 'responsive' to the classname when hamburger menu has been clicked on
+  
+  // creates a javascript object called obj, which will contain the json information in facts.js
+  let obj = JSON.parse(jsonString),
+      theData = '';
+  // Iterate over each fact and append it to theData variable
+  for (key in obj.facts) {
+    theData += `${obj.facts[key].fact}`;
+  }
+  // populates the chosen element's content with the data:
+  document.getElementById('information').innerHTML = theData;
+
+  
+  /* 
+  Function that appends 'responsive' to the classname when hamburger menu has been clicked on
+  Tutorial followed for javascript eventlistener - https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+  Has been adapted with meaningful variable names and let instead of var
+  */
   function clickHamburgerMenu() {
     let navBar = document.getElementById('topNavigationBar');
     if (navBar.className === 'topNavigation') {
