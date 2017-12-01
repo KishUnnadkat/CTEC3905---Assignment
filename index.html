@@ -20,21 +20,18 @@
     </header>
     
     <!-- Section containing the top picture with my name and role -->
-    <section id="pictureWithName">
-      <div id="informationText">
+    <section class="pictureWithName">
+      <div class="informationText">
         <h1>Kishan Unnadkat</h1>
         <span>Software Developer - Web Developer &amp; Designer</span>
       </div>
     </section>
     
     <!-- Portfolio Section -->
-    <section id="portfolio">
-      <h1>Portfolio</h1>
-
+    <section>
+      <h1 class="alternateSectionHeader">Portfolio</h1>
       <div class="portfolioModal">
-        <div class="portfolioBox">
-          <img id="rockPaperScissorsImg" class="portfolioIcon" src="img/RockPaperScissors.jpg" alt="Rock Paper Scissors Picture">
-        </div>
+        <img id="rockPaperScissorsImg" class="portfolioIcon" src="img/RockPaperScissors.jpg" alt="Rock Paper Scissors Picture">
         <div class="container-popup" id="modalDialog">
             <div class="popup">
               <button id="closeBtn">Close</button>
@@ -49,14 +46,8 @@
             </div>
         </div>
       </div>
-
-
-
-      
       <div class="portfolioModal">
-        <div class="portfolioBox" >
-          <img id="computerScienceModuleChooserImg" class="portfolioIcon" src="img/ComputerScienceModuleChooser.jpg" alt="Computer Science Module Chooser Picture">
-        </div>
+        <img id="computerScienceModuleChooserImg" class="portfolioIcon" src="img/ComputerScienceModuleChooser.jpg" alt="Computer Science Module Chooser Picture">
         <div class="container-popup" id="modalDialog1">
             <div class="popup">
               <button id="closeBtn1">Close</button>
@@ -71,29 +62,20 @@
             </div>
           </div>
         </div>
-
-
-
-
-
-
     </section>
     
     <!-- About Me section -->
-    <section id="about">
+    <section class="about">
       <h1>About Me</h1>
-      <img id="profilePic" src="img/profilePicture.jpg" alt="Profile Picture">
-      <p id="information">
-
-      </p>
-      
+      <img class="profilePic" src="img/profilePicture.jpg" alt="Profile Picture">
+      <p id="information"></p>
       <button id="downloadCV">Download my CV</button>
     </section>
     
     <!-- Contact Me section -->
-    <section id="contact">
-      <h1>Contact Me</h1>
-      <form id="form">
+    <section>
+      <h1 class="alternateSectionHeader">Contact Me</h1>
+      <form>
         <input type="text" id="name" placeholder="Name">
         <input type="text" id="email" placeholder="Email Address">
         <textarea id="message" name="message" placeholder="Message"></textarea>      
@@ -102,17 +84,16 @@
     </section>
     
     <!-- Extra Information section -->
-    <section id="extraInfo">
-
-      <div id="location">
+    <section class="extraInfo">
+      <div id="location" class="extraInfoTopDivs"> 
         <h3>Location</h3>
         <span>Romford,<br>Essex</span>
         <div id="map"></div>
       </div>
 
-      <div id="socialMediaInfo">
+      <div class="extraInfoTopDivs">
         <h3>Around the web</h3>
-        <ul class="socialMediaLinks">
+        <ul class="footerLinks">
           <li>
             <a href="https://www.facebook.com/kishan.unnadkat">Facebook</a>
           </li>
@@ -124,6 +105,21 @@
           </li>
         </ul>
       </div>
+
+      <div class="sitemap">
+        <h3>Sitemap</h3>
+        <ul class="footerLinks">
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#about">About Me</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
     </section>
     
     <!-- Basic footer showing copyright logo with my name -->
@@ -131,7 +127,7 @@
       <span>Copyright 2017 © Kishan Unnadkat</span>
     </footer>
 
-    <!-- Import scripts.js at the end after DOM content has loaded fully -->
+    <!-- Import facts.js containing json and scripts.js at the end after DOM content has loaded fully -->
     <script src="js/facts.js"></script>
     <script src="js/scripts.js"></script>
 

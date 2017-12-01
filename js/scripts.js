@@ -47,7 +47,7 @@ function initMap() {
   // Add event listener so when responsive menu clicked on, runs clickHamburgerMenu function
   document.getElementById('responsiveIcon').addEventListener('click', clickHamburgerMenu);
   
-
+  
   // Open Modal Dialog1
   function openModal1() {
     let modalDialog = document.getElementById('modalDialog');
@@ -60,8 +60,6 @@ function initMap() {
   }
   document.getElementById('closeBtn').addEventListener('click', closeBtnOnModal1);
 
-
-
   // Open Modal Dialog2
   function openModal2() {
     let modalDialog = document.getElementById('modalDialog1');
@@ -73,6 +71,16 @@ function initMap() {
     modalDialog.style.display = 'none';
   }
   document.getElementById('closeBtn1').addEventListener('click', closeBtnOnModal2);
+
+  // Tried to abstract out the open close states by passing parameters into function on eventListener but didn't work
+  // function openCloseModal(modalDialogToOpen, newModalDialogState) {
+  //   let modalDialog = document.getElementById(modalDialogToOpen);
+  //   modalDialog.style.display = newModalDialogState;
+  // }
+  // document.getElementById('rockPaperScissorsImg').addEventListener('click', openCloseModal('modalDialog', 'block'));
+  // document.getElementById('closeBtn').addEventListener('click', openCloseModal('modalDialog', 'none'));
+  // document.getElementById('computerScienceModuleChooserImg').addEventListener('click', openCloseModal('modalDialog1', 'block'));
+  // document.getElementById('closeBtn1').addEventListener('click', openCloseModal('modalDialog1', 'none'));
 
   /*  
     This is an anonymous function as it has no name and is declared all at once.
