@@ -216,3 +216,20 @@ footer {
   text-align: center;
   padding: 10px 0;
 }
+
+
+/* Breakpoint at 768px for tablets */
+@media screen and (min-width: 768px) {
+  .topNavigation {
+    height: 60px;
+  }
+  .topNavigation .icon {
+    display: none;
+  }
+  .topNavigation a {
+    height: 30px;
+    padding-top: 20px;
+    float: none;
+    display: inline-block;
+  }
+}
