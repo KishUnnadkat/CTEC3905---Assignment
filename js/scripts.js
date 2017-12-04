@@ -8,7 +8,7 @@ function initMap() {
     lng: 0.1858
   };
   let map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 10,
+    zoom: 11,
     center: uluru
   });
   let marker = new google.maps.Marker({
@@ -25,7 +25,7 @@ function initMap() {
       theData = '';
   // Iterate over each fact and append it to theData variable
   for (key in obj.facts) {
-    theData += `${obj.facts[key].fact}`;
+    theData += `${obj.facts[key].fact} `;
   }
   // populates the chosen element's content with the data:
   document.getElementById('information').innerHTML = theData;

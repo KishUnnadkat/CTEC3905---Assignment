@@ -46,7 +46,7 @@ section {
   padding-top: 25px;
   background-color: white;
 }
-section h1 {
+h1 {
   font-size: 30px;
   text-transform: uppercase;
   text-align: center;
@@ -108,6 +108,7 @@ section h1 {
   float: right;
 }
 .popup h1 {
+  color: black;
   margin: 20px 0;
 }
 .popup p {
@@ -198,8 +199,10 @@ h3 {
   display: inline-block;
 }
 #map {
+  margin: 0 auto;
   height: 150px;
   width: 150px;
+  margin-bottom: 15px;
 }
 .footerLinks {
   margin: 0;
@@ -209,7 +212,9 @@ h3 {
 .sitemap {
   margin-bottom: 0px;
 }
-
+#locationContainer {
+  margin-bottom: 0;
+}
 /* Footer styles here */
 footer {
   background-color: black;
@@ -231,5 +236,44 @@ footer {
     padding-top: 20px;
     float: none;
     display: inline-block;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  .informationText {
+    font-size: 20px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .portfolioModal {
+    display: inline;
+  }
+  .portfolioIcon {
+    margin: 0;
+    display: inline;
+    width: 33%;
+  }
+  #rockPaperScissorsImg {
+    margin-right: 20px;
+  }
+  .extraInfo {
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .popup {
+    width: 80%;
+    height: 80%;
+  }
+  #map {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .modalPicture {
+    width: 55%;
+  }
+  footer span {
+    font-size: 20px;
   }
 }
