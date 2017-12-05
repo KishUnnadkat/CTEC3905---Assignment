@@ -47,7 +47,6 @@ function initMap() {
   // Add event listener so when responsive menu clicked on, runs clickHamburgerMenu function
   document.getElementById('responsiveIcon').addEventListener('click', clickHamburgerMenu);
   
-  
   // Open Modal Dialog1
   function openModal1() {
     let modalDialog = document.getElementById('modalDialog');
@@ -72,15 +71,52 @@ function initMap() {
   }
   document.getElementById('closeBtn1').addEventListener('click', closeBtnOnModal2);
 
-  // Tried to abstract out the open close states by passing parameters into function on eventListener but didn't work
-  // function openCloseModal(modalDialogToOpen, newModalDialogState) {
-  //   let modalDialog = document.getElementById(modalDialogToOpen);
-  //   modalDialog.style.display = newModalDialogState;
-  // }
-  // document.getElementById('rockPaperScissorsImg').addEventListener('click', openCloseModal('modalDialog', 'block'));
-  // document.getElementById('closeBtn').addEventListener('click', openCloseModal('modalDialog', 'none'));
-  // document.getElementById('computerScienceModuleChooserImg').addEventListener('click', openCloseModal('modalDialog1', 'block'));
-  // document.getElementById('closeBtn1').addEventListener('click', openCloseModal('modalDialog1', 'none'));
+  /* // Tried to abstract out the open close states by passing parameters into function on eventListener but didn't work
+  function openCloseModal(modalDialogToOpen, newModalDialogState) {
+    let modalDialog = document.getElementById(modalDialogToOpen);
+    modalDialog.style.display = newModalDialogState;
+  }
+  document.getElementById('rockPaperScissorsImg').addEventListener('click', openCloseModal('modalDialog', 'block'));
+  document.getElementById('closeBtn').addEventListener('click', openCloseModal('modalDialog', 'none'));
+  document.getElementById('computerScienceModuleChooserImg').addEventListener('click', openCloseModal('modalDialog1', 'block'));
+  document.getElementById('closeBtn1').addEventListener('click', openCloseModal('modalDialog1', 'none'));
+  */
+
+  /* // Tried to abstract popup modal dialog code so can create a new modal dialog in javascript dynamically
+  function createDynamicPopup(headerText, imgSrc, imgAlt) {
+    let containerPopupDiv = document.createElement('div'),
+        popupDiv = document.createElement('div'),
+        closeBtn = document.createElement('button'),
+        headerTag = document.createElement('h1'),
+        image = document.createElement('img'),
+        description = document.createElement('p');
+        
+    containerPopupDiv.className = 'container-popup';
+    containerPopupDiv.id = 'modalDialog';
+    containerPopupDiv.style.display = 'block';
+    popupDiv.className = 'popup';
+    closeBtn.id = 'closeBtn';
+    closeBtn.addEventListener('click', function() {
+      document.getElementById('portfolio').removeChild(containerPopupDiv);
+      containerPopupDiv.style.display = 'none';
+    });
+
+    headerTag.innerHTML = headerText;
+    image.src = imgSrc;
+    image.alt = imgAlt;
+    image.className = 'modalPicture';
+    // description.innerText = descriptionParam;
+
+    popupDiv.appendChild(closeBtn);
+    popupDiv.appendChild(headerTag);
+    popupDiv.appendChild(image);
+    popupDiv.appendChild(description);
+    containerPopupDiv.appendChild(popupDiv);
+    document.getElementById('portfolio').appendChild(containerPopupDiv);
+  }
+  document.getElementById('rockPaperScissorsImg').addEventListener("click", createDynamicPopup("Rock Paper Scissors", "img/RockPaperScissors.jpg", "Rock Paper Scissors Picture"));
+  */
+
 
   /*  
     This is an anonymous function as it has no name and is declared all at once.
