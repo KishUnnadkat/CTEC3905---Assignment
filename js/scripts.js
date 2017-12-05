@@ -19,7 +19,6 @@ function initMap() {
 
 // All functions/event handlers will be added automatically when this javascript file has been added
 (function() {
-  
   // creates a javascript object called obj, which will contain the json information in facts.js
   let obj = JSON.parse(jsonString),
       theData = '';
@@ -117,6 +116,24 @@ function initMap() {
   document.getElementById('rockPaperScissorsImg').addEventListener("click", createDynamicPopup("Rock Paper Scissors", "img/RockPaperScissors.jpg", "Rock Paper Scissors Picture"));
   */
 
+  /*
+  This is a function to check if the fields within the form are filled in or not.
+  */
+  function isFormEmpty() {
+    let nameInput = document.getElementById('name').value,
+        emailInput = document.getElementById('email').value,
+        messageInput = document.getElementById('message').value,
+        errorMsg = document.getElementById('errorMessage'),
+        regEx = "/^[0-9a-zA-Z]+$/";
+
+        if(!nameInput || !emailInput || !messageInput) {
+          errorMsg.innerHTML = 'Please make sure all fields are filled in'
+        }
+        else if(!nameInput.match(regEx) || !emailInput.match(regEx) || !messageInput.match(regEx)) {
+          errorMsg.innerHTML = 'One of your fields contains invalid characters'
+        }
+  }
+  document.getElementById('submitBtn').addEventListener("click", isFormEmpty);
 
   /*  
     This is an anonymous function as it has no name and is declared all at once.

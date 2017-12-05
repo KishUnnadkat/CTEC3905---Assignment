@@ -5,6 +5,7 @@ html, body {
   padding: 0;
   color: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* Header and navigation menu style */
@@ -121,6 +122,7 @@ h1 {
   color: black;
   margin-top: 0;
   font-size: 15px;
+  margin-top: 10px;
 }
 .modalPicture {
   display: block;
@@ -177,11 +179,17 @@ input[type=submit]:hover {
   background-color: #18BC9F;
   transition: all 0.3s ease-in-out;
 }
+#contact p {
+  color: red;
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
 
 /* Extra Info Section styles here */
 .extraInfo {
   display: block;
-  /* display: flex;  USE THIS FOR DESKTOP/LAPTOPS */
   justify-content: space-around;
   background-color: #1a1a1a;
   text-align: center;
@@ -313,6 +321,9 @@ figure:hover figcaption {
   .popup {
     width: 80%;
     height: 80%;
+  }
+  .popup p {
+    font-size: 20px;
   }
   #map {
     margin-left: 35px;
