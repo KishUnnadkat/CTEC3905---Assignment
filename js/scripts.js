@@ -124,17 +124,19 @@ function initMap() {
         emailInput = document.getElementById('email').value,
         messageInput = document.getElementById('message').value,
         customMsg = document.getElementById('customMessage'),
-        regEx = "[0-9a-zA-Z]+()[]{}*&^%$#!";
+        regEx = /^([^<>%$]*)$/;
 
         if(!nameInput || !emailInput || !messageInput) {
-          customMsg.innerHTML = 'Please make sure all fields are filled in'
+          customMsg.style.color = 'red';
+          customMsg.innerHTML = 'Please make sure all fields are filled in';
         }
-        else if(nameInput.match(regEx) || emailInput.match(regEx) || messageInput.match(regEx)) {
-          customMsg.innerHTML = 'One of your fields contains invalid characters'
+        else if(!nameInput.match(regEx) || !emailInput.match(regEx)) {
+          customMsg.style.color = 'red';
+          customMsg.innerHTML = 'One of your fields contains invalid characters';
         }
         else {
-          customMsg.innerHTML = 'Success!';
           customMsg.style.color = 'green';
+          customMsg.innerHTML = 'Success!';
           resetContactFields();
         }
   }
@@ -151,9 +153,9 @@ function initMap() {
     This is an anonymous function as it has no name and is declared all at once.
     It has been done like this because the event only needs one line of code and is just as easy
     to understand like this.
-    NOTE: The location is relevant to index.html as this is the page the user will be on.
+    NOTE: The location specified for window.open is relevant to index.html as this is the page the user will be on.
   */
   document.getElementById('downloadCV').addEventListener('click', function() {
-    window.location = "misc/Kishans%20CV.pdf";
+    window.open("misc/Kishans%20CV.pdf");
   });
 })();

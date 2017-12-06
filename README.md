@@ -26,10 +26,27 @@ NOTE: When committing and doing branching process for tablet styles, it didn't w
 
 
 ## Testing
-Talk about testing and what was done as part of testing the website
-```
-Give an example
-```
+### All links on the site tested including:
+- All links in navigation menu (in all modes)
+- Portfolio modal dialogs
+- Download Links for assignments in modal dialog
+- Close buttons in modal dialog
+- View my CV button
+- Contact us submit button behaves correctly
+- Footer social media links
+- Footer sitemap links
+
+### When writing the function to see if the fields are blank or contain invalid characters the following combinations were tested
+- Typing 'Kishan Unnadkat' as name, 'P14176943@my365.dmu.ac.uk' as email, 'Testing' as message    -> Valid
+- Typing 'P14176943' as name, 'P14176943@my365.dmu.ac.uk' as email, 'P14176943' as message        -> Valid
+- Typing '!@£$%^&*()_' as name, '!@£$%^&*()_' as email, '!@£$%^&*()_' as message                  -> Invalid
+- Typing '!@£$%^&*()_' as name, 'P14176943@my365.dmu.ac.uk' as email, 'Testing' as message        -> Invalid
+
+### Other various testing
+- Resizing at each breakpoint works (768px and 1250px)
+- Works on all devices (Mobile, Tablet and Desktop)
+- Animation works for responsive icon for mobile
+- Validated on HTML validator and No console errors throughout the site
 
 
 ## References
