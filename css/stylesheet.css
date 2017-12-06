@@ -61,7 +61,7 @@ h1 {
 .pictureWithName {
   height: 30%;
   text-align: center;
-  background: url("../img/mainDisplay.jpg") no-repeat;
+  background: url("../img/maindisplay.jpg") no-repeat;
   background-size: cover;
 }
 .informationText {
@@ -296,10 +296,7 @@ figure:hover figcaption {
   h1 {
     font-size: 35px;
   }
-  .informationText {
-    font-size: 20px;
-  }
-  p {
+  .informationText, p, footer span, .popup p {
     font-size: 20px;
   }
   .portfolioModal {
@@ -322,9 +319,6 @@ figure:hover figcaption {
     width: 80%;
     height: 80%;
   }
-  .popup p {
-    font-size: 20px;
-  }
   #map {
     margin-left: 35px;
     margin-right: 35px;
@@ -332,7 +326,43 @@ figure:hover figcaption {
   .modalPicture {
     width: 55%;
   }
-  footer span {
-    font-size: 20px;
+  .portfolioIcon {
+    width: 33%;
+  }
+
+}
+
+
+/* Breakpoint at 1250px for desktops */
+@media screen and (min-width: 1250px) {
+  .topNavigation {
+    height: 90px;
+  }
+  .topNavigation a {
+    font-size: 25px;
+    padding-top: 30px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .informationText, p, footer span, .popup p, #downloadCV {
+    font-size: 25px;
+  }
+  .popup {
+    width: 90%;
+    height: 90%;
+  }
+  .portfolioIcon {
+    margin: 0 25px;
+    width: 45%;
+  }
+  .modalPicture {
+    width: 45%;
+  }
+  #downloadCV {
+    height: 40px;
+  }
+  .about {
+    padding-bottom: 50px;
   }
 }
