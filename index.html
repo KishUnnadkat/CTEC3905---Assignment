@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">           <!-- Import stylesheet.css !-->  
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">           <!-- Import stylesheet.css -->
+    <link rel="icon" type="image/png" href="img/favicon.png">                   <!-- Created my own favicon.png -->
     <title>Kishan Unnadkat | Web Portfolio</title>
   </head>
   
@@ -12,7 +13,7 @@
     <!-- Header tag containing the responsive nav menu -->
     <header>
       <nav class="topNavigation" id="topNavigationBar">
-        <a id="responsiveIcon" class="icon">&#9776;</a>     
+        <a id="responsiveIcon" class="icon">&#9776;</a>
         <a id="portfolioBtn" href="#portfolio">Portfolio</a>
         <a id="aboutBtn" href="#about">About</a>
         <a id="contactBtn" href="#contact">Contact</a>
@@ -31,7 +32,7 @@
     <section id="portfolio">
       <h1 class="alternateSectionHeader">Portfolio</h1>
       <div class="portfolioModal">
-        <img id="rockPaperScissorsImg" class="portfolioIcon" src="img/rps.jpg" alt="Rock Paper Scissors Picture">                    
+        <img id="rockPaperScissorsImg" class="portfolioIcon" src="img/rps.jpg" alt="Rock Paper Scissors Picture">
         
         <!-- STILL DECIDING WHETHER TO KEEP THE FIGURE -->
         <!-- <figure>
@@ -41,6 +42,7 @@
           </figcaption>
         </figure> -->
        
+        <!-- Portfolio modal done in divs as wouldn't make sense to do it any other elements such as section -->
         <div class="container-popup" id="modalDialog">
             <div class="popup">
               <button class="closeBtnClass" id="closeBtn">Close</button>
@@ -52,12 +54,22 @@
                 had to learn a new language and all the syntax with it, however as Scala is a functional language, it is easier to understand and I
                 found it very convenient as I could import both Scala and Java libraries.
               </p>
+              <ul>
+                <li>
+                  Download:<a href="misc/rps.rar">Download link</a>
+                </li>
+                <li>
+                  Date:<a href="#">April 2016</a>
+                </li>
+              </ul>
             </div>
         </div>
       </div>
       
       <div class="portfolioModal">
         <img id="computerScienceModuleChooserImg" class="portfolioIcon" src="img/modulechooser.jpg" alt="Computer Science Module Chooser Picture">
+        
+        <!-- Portfolio modal done in divs as wouldn't make sense to do it any other elements such as section -->
         <div class="container-popup" id="modalDialog1">
             <div class="popup">
               <button class="closeBtnClass" id="closeBtn1">Close</button>
@@ -69,6 +81,14 @@
                 design pattern and decompose classes through abstraction and encapsulation.
                 The GUI was done using Java Swing and AWT libraries.
               </p>
+              <ul>
+                <li>
+                  Download:<a href="misc/modulechooser.rar">Download link</a>
+                </li>
+                <li>
+                  Date:<a href="#">April 2016</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -78,8 +98,8 @@
     <section id="about" class="about">
       <h1>About Me</h1>
       <img class="profilePic" src="img/profilepic.jpg" alt="Profile Picture">
-      <p id="information"></p>
-      <button id="downloadCV">Download my CV</button>
+      <p id="information"></p>                                                      <!-- information p tag is populated using Javascript from information provided in facts.js json array -->
+      <button id="downloadCV">View my CV</button>
     </section>
     
     <!-- Contact Me section -->
@@ -89,22 +109,25 @@
         <input type="text" id="name" placeholder="Name">
         <input type="text" id="email" placeholder="Email Address">
         <textarea id="message" name="message" placeholder="Message"></textarea>
-        <p id="errorMessage"></p>
-        <input id="submitBtn" type="button" value="Submit">
+        <p id="customMessage"></p>                                                     <!-- blank p tag which shows error message using Javascript if blank fields -->
+        <input id="submitBtn" type="button" value="Submit">                            <!-- Currently the type of element is 'button' but if form had to submit, it would be 'submit' -->
       </form>
     </section>
     
     <!-- Extra Information section -->
     <section class="extraInfo">
-      <div id="locationContainer" class="extraInfoTopDivs"> 
+      <!-- contains basic location text information -->
+      <div id="locationContainer" class="extraInfoTopDivs">
         <div class="location">
           <h3>Location</h3>
-          <span>Romford,<br>Essex</span>  <!-- <div id="map"></div> EITHER HAVE THE MAP HERE AND GET RID OF ROMFORD, ESSEX -->
+          <span>Romford,<br>Essex</span>
         </div>
       </div>
 
+      <!-- div container for google maps to be initialised in -->
       <div id="map"></div>
 
+      <!-- Social media links -->
       <div class="extraInfoTopDivs">
         <h3>Around the web</h3>
         <ul class="footerLinks">
@@ -120,6 +143,7 @@
         </ul>
       </div>
 
+      <!-- Sitemap -->
       <div class="sitemap">
         <h3>Sitemap</h3>
         <ul class="footerLinks">

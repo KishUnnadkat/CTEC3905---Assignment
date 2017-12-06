@@ -29,7 +29,6 @@ function initMap() {
   // populates the chosen element's content with the data:
   document.getElementById('information').innerHTML = theData;
 
-  
   /* 
   Function that appends 'responsive' to the classname when hamburger menu has been clicked on
   Tutorial followed for javascript eventlistener - https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
@@ -46,7 +45,7 @@ function initMap() {
   // Add event listener so when responsive menu clicked on, runs clickHamburgerMenu function
   document.getElementById('responsiveIcon').addEventListener('click', clickHamburgerMenu);
   
-  // Open Modal Dialog1
+  // Open Modal Dialog1 - Rock Paper Scissors modal
   function openModal1() {
     let modalDialog = document.getElementById('modalDialog');
     modalDialog.style.display = 'block';
@@ -58,7 +57,7 @@ function initMap() {
   }
   document.getElementById('closeBtn').addEventListener('click', closeBtnOnModal1);
 
-  // Open Modal Dialog2
+  // Open Modal Dialog2 - Computer Science Module Chooser modal
   function openModal2() {
     let modalDialog = document.getElementById('modalDialog1');
     modalDialog.style.display = 'block';
@@ -117,23 +116,36 @@ function initMap() {
   */
 
   /*
+  Function to check if the fields within the form are empty or contain invalid characters
   This is a function to check if the fields within the form are filled in or not.
   */
   function isFormEmpty() {
     let nameInput = document.getElementById('name').value,
         emailInput = document.getElementById('email').value,
         messageInput = document.getElementById('message').value,
-        errorMsg = document.getElementById('errorMessage'),
-        regEx = "/^[0-9a-zA-Z]+$/";
+        customMsg = document.getElementById('customMessage'),
+        regEx = "[0-9a-zA-Z]+()[]{}*&^%$#!";
 
         if(!nameInput || !emailInput || !messageInput) {
-          errorMsg.innerHTML = 'Please make sure all fields are filled in'
+          customMsg.innerHTML = 'Please make sure all fields are filled in'
         }
-        else if(!nameInput.match(regEx) || !emailInput.match(regEx) || !messageInput.match(regEx)) {
-          errorMsg.innerHTML = 'One of your fields contains invalid characters'
+        else if(nameInput.match(regEx) || emailInput.match(regEx) || messageInput.match(regEx)) {
+          customMsg.innerHTML = 'One of your fields contains invalid characters'
+        }
+        else {
+          customMsg.innerHTML = 'Success!';
+          customMsg.style.color = 'green';
+          resetContactFields();
         }
   }
   document.getElementById('submitBtn').addEventListener("click", isFormEmpty);
+
+  // Function to get fields of contact us form and set the value to empty when all fields are valid and submit button clicked on
+  function resetContactFields() {
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('message').value = '';
+  }
 
   /*  
     This is an anonymous function as it has no name and is declared all at once.

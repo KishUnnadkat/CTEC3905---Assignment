@@ -27,19 +27,32 @@ html, body {
 }
 .topNavigation a:hover {
   cursor: pointer;
-  color: #18BC9F;
+  color: #18BC9C;
 }
 .topNavigation .icon {
   display: block;
 }
 .topNavigation.responsive a.icon {
   float: left;
+  animation-name: spinner;
+  animation-duration: 2s;
 }
 .topNavigation.responsive a {
   float: none;
   display: block;
   text-align: left;
 }
+
+/* Animation for responsive icon to spin on click */
+@keyframes spinner {
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 /* Generic styles for all sections */
 section {
@@ -107,6 +120,7 @@ h1 {
   left: 0;
   margin: auto;
 }
+/* Styling kept relevant to the popup dialog as only a few elements to be styled */
 .popup button {
   float: right;
 }
@@ -120,9 +134,26 @@ h1 {
 }
 .popup p {
   color: black;
-  margin-top: 0;
   font-size: 15px;
   margin-top: 10px;
+}
+.popup ul {
+  font-size: 15px;
+  text-align: center;
+}
+.popup li {
+  color: black;
+  list-style: none;
+  display: inline;
+}
+.popup a {
+  text-decoration: none;
+  color: #18BC9C;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.popup a:hover {
+  text-decoration: underline;
 }
 .modalPicture {
   display: block;
@@ -176,15 +207,14 @@ input[type=submit] {
   background-color: #f2f2f2;
 }
 input[type=submit]:hover {
-  background-color: #18BC9F;
+  background-color: #18BC9C;
   transition: all 0.3s ease-in-out;
 }
-#contact p {
+#customMessage {
   color: red;
   margin: 0;
   font-weight: bold;
   text-transform: uppercase;
-
 }
 
 /* Extra Info Section styles here */
@@ -201,7 +231,7 @@ input[type=submit]:hover {
   list-style: none;
 }
 .extraInfo a:hover {
-  color: #18BC9F;
+  color: #18BC9C;
 }
 .extraInfoTopDivs {
   margin-bottom: 15px;
