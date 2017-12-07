@@ -11,6 +11,12 @@ These are the initial designs created on invisionapp before starting development
 ![Designs for Mobile](img/mobiledesigns.png "Designs for mobile portfolio website")
 ![Designs for Desktop](img/desktopdesigns.png "Designs for desktop portfolio website")
 Designs were not done for tablet styles as I wanted the tablet styles to be similar to the desktop styles and therefore simply resized everything to look proportional on a tablet.
+<br/>
+When doing the designs for my portfolio website the PARC principles were taken into consideration.
+* Proximity - Common elements were grouped together (e.g. Assignments grouped into portfolio section)
+* Alignment - When placing elements throughout the website, the alignment was an important point as it needed to look correct on all different devices (mobile, tablet and desktop)
+* Repetition - Repetition has been used throughout in terms of fonts, sizes and the portfolio modal pictures and dialogs to keep a simplistic and consistent design throughout the website.
+* Contrast - The colours and background images for the various sections look like a good contrast and makes each section stand out (e.g. When going from the About Me section to the Contact Me section)
 
 
 ## Development Process
