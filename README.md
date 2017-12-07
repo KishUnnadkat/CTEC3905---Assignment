@@ -20,6 +20,8 @@ This section of the readme talks about the development process and the some feat
 * The Google Maps API was used as an external API to display a map of my home location and the provided combined google maps example code was adapted and abstracted out into the relevant css and javascript files
 * An external json file called facts.js containing a json array was used to populate the paragraph text in the 'About Me' section.
 * On this site, my CV can be viewed/downloaded and my assignments can be downloaded. All these files are linked to the files in the `misc` folder. My assignments are .rar files, which have been password protected.
+* The portfolio modal pictures for the computer science module chooser and rock paper scissors assignment was created myself
+* The Contact Me form contains some validation to make sure fields are valid, which I wrote using Javascript and learnt during my placement.
 
 NOTE: When committing and doing branching process for tablet styles, it didn't work properly and got slightly confused so may not show up on github properly. I then downloaded a GUI called 'sourcetree' to commit my desktop styles branch that I created and didn't show how the branch merged into master visually. Master contains all merged branches but not sure if displayed visually properly.
 #### This website has no console errors and has been run through the HTML validator to make sure it is valid HTML5
