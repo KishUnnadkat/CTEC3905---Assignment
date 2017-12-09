@@ -53,7 +53,6 @@ html, body {
   }
 }
 
-
 /* Generic styles for all sections */
 section {
   padding: 40px;
@@ -139,7 +138,7 @@ h1 {
 .popup li {
   color: black;
   list-style: none;
-  display: inline;
+  display: inline-block;
 }
 .dialogLink {
   text-decoration: none;
@@ -181,6 +180,12 @@ h1 {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  transform: scaleX(-1);
+  transition-duration: 1s;
+}
+.profilePic:hover {
+  transform: scaleX(1);
+  transition-duration: 1s;
 }
 p {
   text-align: justify;
@@ -211,11 +216,14 @@ input[type=text], textarea {
   margin-top: 5px;
   resize: none;
 }
+input[type=text], textarea:focus {
+  outline-color: #18BC9C;
+}
 #submitBtn {
   color: white;
   background-color: #18BC9c;
   font-size: 20px;
-  border-radius: 2px solid;
+  padding: 4px 7px;
 }
 #submitBtn:hover {
   background-color: #128f76;
@@ -229,9 +237,6 @@ input[type=text], textarea {
   text-transform: uppercase;
 }
 
-
-
-
 /* Extra Info Section styles here */
 .extraInfo {
   display: block;
@@ -244,9 +249,6 @@ input[type=text], textarea {
   text-decoration: none;
   color: white;
   list-style: none;
-}
-.extraInfo a:hover {
-  color: #18BC9C;
 }
 .extraInfoTopDivs {
   margin-bottom: 15px;
@@ -269,60 +271,30 @@ h3 {
   padding: 0;
   list-style: none;
 }
+.socialMediaLinks {
+  padding: 5px;
+  display: inline-block;
+}
 .sitemap {
   margin-bottom: 0px;
 }
 #locationContainer {
   margin-bottom: 0;
 }
+input[type=text], textarea:focus, .extraInfo a:hover {
+  color: #18BC9C;
+}
+/* CSS for font-awesome where the classname contains 'fa fa-' */
+a[class*="fa fa-"] {
+  font-size: 30px;
+}
+
 /* Footer styles here */
 footer {
   background-color: black;
   text-align: center;
   padding: 10px 0;
 }
-
-
-
-/* figure {
-  width: 70%;
-  background: white;
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-figure img {
-  width: 100%;
-  height: 300px;
-  background: black;
-  margin-bottom: -4em;
-  display: block;
-}
-
-figcaption {
-  box-sizing: border-box;
-  height: 4em;
-  line-height: 1.2em;
-  padding: .25em;
-  transform: translateY(0em);
-  background: rgba( 255, 255, 255, 0 );
-  opacity: 0;
-  transition: all .5s;
-}
-
-figure:hover figcaption {
-  color: black;
-  transform: translateY(-4em);
-  background: rgba( 255, 255, 255, .78 );
-  opacity: .78;
-} */
-
-
-
-
-
-
 
 /* Breakpoint at 768px for tablets */
 @media screen and (min-width: 768px) {
@@ -374,9 +346,11 @@ figure:hover figcaption {
   .portfolioIcon {
     width: 33%;
   }
-
+  /* CSS for font-awesome where the classname contains 'fa fa-' */
+  a[class*="fa fa-"] {
+    font-size: 40px;
+  }
 }
-
 
 /* Breakpoint at 1250px for desktops */
 @media screen and (min-width: 1250px) {
@@ -409,5 +383,9 @@ figure:hover figcaption {
   }
   .about {
     padding-bottom: 50px;
+  }
+  /* CSS for font-awesome where the classname contains 'fa fa-' */
+  a[class*="fa fa-"] {
+    font-size: 50px;
   }
 }

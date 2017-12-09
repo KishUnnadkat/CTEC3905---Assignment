@@ -28,6 +28,7 @@ This section of the readme talks about the development process and the some feat
 * On this site, my CV can be viewed/downloaded and my assignments can be downloaded. All these files are linked to the files in the `misc` folder. My assignments are .rar files, which have been password protected.
 * The portfolio modal pictures for the computer science module chooser and rock paper scissors assignment was created myself
 * The Contact Me form contains some validation to make sure fields are valid, which I wrote using Javascript and learnt during my placement.
+* font-awesome was used for the social media links at the bottom of the page
 
 NOTE: When committing and doing branching process for tablet styles, it didn't work properly and got slightly confused so may not show up on github properly. I then downloaded a GUI called 'sourcetree' to commit my desktop styles branch that I created and didn't show how the branch merged into master visually. Master contains all merged branches but not sure if displayed visually properly.
 #### This website has no console errors and has been run through the HTML validator to make sure it is valid HTML5
@@ -60,3 +61,4 @@ NOTE: When committing and doing branching process for tablet styles, it didn't w
 ## References
 * W3schools.com. (2017). How To Create a Responsive Top Navigation Menu. [online] Available at: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp [Accessed 6 Dec. 2017].
 * Validator.w3.org. (2017). The W3C Markup Validation Service. [online] Available at: https://validator.w3.org/ [Accessed 6 Dec. 2017].
+* Gandy, D. (2017). Font Awesome, the iconic font and CSS toolkit. [online] Fontawesome.io. Available at: http://fontawesome.io/ [Accessed 9 Dec. 2017].
