@@ -281,7 +281,10 @@ h3 {
 #locationContainer {
   margin-bottom: 0;
 }
-input[type=text], textarea:focus, .extraInfo a:hover {
+input[type=text], textarea:focus {
+  outline-color: #18BC9C;
+}
+.extraInfo a:hover {
   color: #18BC9C;
 }
 /* CSS for font-awesome where the classname contains 'fa fa-' */

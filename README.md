@@ -44,6 +44,10 @@ NOTE: When committing and doing branching process for tablet styles, it didn't w
 - Contact us submit button behaves correctly
 - Footer social media links
 - Footer sitemap links
+- Evidence of mobile testing ![Evidence of user testing for mobile](img/mobiletesting.gif "Evidence of User Testing for mobile")
+- Evidence of tablet testing ![Evidence of user testing for tablet](img/tablettesting.gif "Evidence of User Testing for tablet")
+- Evidence of desktop testing ![Evidence of user testing for desktop](img/desktoptesting.gif "Evidence of User Testing for desktop")
+
 
 ### When writing the function to see if the fields are blank or contain invalid characters the following combinations were tested
 - Typing 'Kishan Unnadkat' as name, 'P14176943@my365.dmu.ac.uk' as email, 'Testing' as message    -> Valid
