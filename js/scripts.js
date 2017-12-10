@@ -45,6 +45,8 @@ function initMap() {
   // Add event listener so when responsive menu clicked on, runs clickHamburgerMenu function
   document.getElementById('responsiveIcon').addEventListener('click', clickHamburgerMenu);
   
+  /*
+  // Demonstration of how the modalDialogs in the portfolio were implemented first time round without abstracting out code
   // Open Modal Dialog1 - Rock Paper Scissors modal
   function openModal1() {
     let modalDialog = document.getElementById('modalDialog');
@@ -68,19 +70,34 @@ function initMap() {
     modalDialog.style.display = 'none';
   }
   document.getElementById('closeBtn1').addEventListener('click', closeBtnOnModal2);
+  */
 
-  /* // Tried to abstract out the open close states by passing parameters into function on eventListener but didn't work
+  /* 
+  This is the equivalent of the above code whereas a function to abstract out the opening and closing of the modal dialog has been written
+  The function accepts two arguments; the modalDialog to open and the new state of the dialog
+  By writing code this way it reduces the amount of duplicate code as it has been abstracted out into a small function.
+  */
   function openCloseModal(modalDialogToOpen, newModalDialogState) {
     let modalDialog = document.getElementById(modalDialogToOpen);
     modalDialog.style.display = newModalDialogState;
   }
-  document.getElementById('rockPaperScissorsImg').addEventListener('click', openCloseModal('modalDialog', 'block'));
-  document.getElementById('closeBtn').addEventListener('click', openCloseModal('modalDialog', 'none'));
-  document.getElementById('computerScienceModuleChooserImg').addEventListener('click', openCloseModal('modalDialog1', 'block'));
-  document.getElementById('closeBtn1').addEventListener('click', openCloseModal('modalDialog1', 'none'));
-  */
+  document.getElementById("rockPaperScissorsImg").addEventListener("click", function(){
+    openCloseModal("modalDialog", "block");
+  });
+  document.getElementById("closeBtn").addEventListener('click', function() {
+    openCloseModal('modalDialog', 'none');
+  });
+  document.getElementById("computerScienceModuleChooserImg").addEventListener("click", function(){
+    openCloseModal("modalDialog1", "block");
+  });
+  document.getElementById("closeBtn1").addEventListener('click', function() {
+    openCloseModal('modalDialog1', 'none');
+  });
 
-  /* // Tried to abstract popup modal dialog code so can create a new modal dialog in javascript dynamically
+
+
+  /*
+  // Created Javascript code to create a popup modal but cluttered up the Javascript code so throught it is best to keep it in HTML
   function createDynamicPopup(headerText, imgSrc, imgAlt) {
     let containerPopupDiv = document.createElement('div'),
         popupDiv = document.createElement('div'),
@@ -118,6 +135,7 @@ function initMap() {
   /*
   Function to check if the fields within the form are empty or contain invalid characters
   This is a function to check if the fields within the form are filled in or not.
+  Uses regex to match and make sure invalid characters haven't been entered into the contact form.
   */
   function isFormEmpty() {
     let nameInput = document.getElementById('name').value,
