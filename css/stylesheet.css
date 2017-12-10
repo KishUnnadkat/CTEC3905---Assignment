@@ -139,6 +139,7 @@ h1 {
   color: black;
   list-style: none;
   display: inline-block;
+  cursor: pointer;
 }
 .dialogLink {
   text-decoration: none;
@@ -287,10 +288,24 @@ input[type=text], textarea:focus {
 .extraInfo a:hover {
   color: #18BC9C;
 }
+.pulse {
+  animation-name: pulseanimation;
+	animation-duration: 5s;
+	transform-origin: 100% 100%;
+	animation-iteration-count: infinite;
+}
+@keyframes pulseanimation {
+	0% { transform: scale(0.75); }
+	50% { transform: scale(1); }
+	100% { transform: scale(0.75); }
+}
+
+
 /* CSS for font-awesome where the classname contains 'fa fa-' */
 a[class*="fa fa-"] {
   font-size: 30px;
 }
+
 
 /* Footer styles here */
 footer {

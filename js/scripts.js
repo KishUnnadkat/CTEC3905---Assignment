@@ -94,8 +94,6 @@ function initMap() {
     openCloseModal('modalDialog1', 'none');
   });
 
-
-
   /*
   // Created Javascript code to create a popup modal but cluttered up the Javascript code so throught it is best to keep it in HTML
   function createDynamicPopup(headerText, imgSrc, imgAlt) {
