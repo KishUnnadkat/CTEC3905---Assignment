@@ -81,6 +81,25 @@ h1 {
   top: 30%;
   font-size: 15px;
 }
+/* Animation for the header section containing my name */
+@keyframes headerAnimation {
+  0% {
+      transform: scale(0.1) rotate(50deg);
+  }
+  50% {
+      transform: rotate(-10deg)
+  }
+  70% {
+      transform: rotate(5deg)
+  }
+  to {
+      transform: scale(1)
+  }
+}
+.headerAnimation {
+  animation-name: headerAnimation;
+  animation-duration: 2s;
+}
 
 /* Portfolio styles here */
 .portfolioIcon {
@@ -169,6 +188,19 @@ h1 {
   display: block;
   width: 55%;
   margin: 0 auto;
+}
+@keyframes popupAnimation {
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3)
+  }
+  50% {
+      opacity: 1
+  }
+}
+.popupAnimation {
+  animation-name: popupAnimation;
+  animation-duration: 0.5s;
 }
 
 /* About Me styles here */
