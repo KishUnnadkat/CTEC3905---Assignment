@@ -17,7 +17,7 @@ function initMap() {
   });
 }
 
-// All functions/event handlers will be added automatically when this javascript file has been added
+// All functions/event handlers will be added automatically when this javascript file has been called (Once page loads)
 (function() {
   // creates a javascript object called obj, which will contain the json information in facts.js
   let obj = JSON.parse(jsonString),
@@ -133,7 +133,7 @@ function initMap() {
   /*
   Function to check if the fields within the form are empty or contain invalid characters
   This is a function to check if the fields within the form are filled in or not.
-  Uses regex to match and make sure invalid characters haven't been entered into the contact form.
+  Uses regex to match and make sure invalid characters haven't been entered into the contact form and displays error or success message accordingly
   */
   function isFormEmpty() {
     let nameInput = document.getElementById('name').value,

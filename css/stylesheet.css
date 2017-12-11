@@ -42,8 +42,7 @@ html, body {
   display: block;
   text-align: left;
 }
-
-/* Animation for responsive icon to spin on click */
+/* Animation for responsive nav menu icon to spin on click */
 @keyframes spinner {
   50% {
     transform: rotate(180deg);
@@ -189,6 +188,11 @@ h1 {
   width: 55%;
   margin: 0 auto;
 }
+.popupAnimation {
+  animation-name: popupAnimation;
+  animation-duration: 0.5s;
+}
+/* Animation for popup modal dialog when clicked */
 @keyframes popupAnimation {
   0% {
     opacity: 0;
@@ -197,10 +201,6 @@ h1 {
   50% {
       opacity: 1
   }
-}
-.popupAnimation {
-  animation-name: popupAnimation;
-  animation-duration: 0.5s;
 }
 
 /* About Me styles here */
@@ -331,13 +331,10 @@ input[type=text], textarea:focus {
 	50% { transform: scale(1); }
 	100% { transform: scale(0.75); }
 }
-
-
 /* CSS for font-awesome where the classname contains 'fa fa-' */
 a[class*="fa fa-"] {
   font-size: 30px;
 }
-
 
 /* Footer styles here */
 footer {
