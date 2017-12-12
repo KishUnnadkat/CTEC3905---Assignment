@@ -29,6 +29,7 @@ This section of the readme talks about the development process and the some feat
 * The portfolio modal pictures for the computer science module chooser and rock paper scissors assignment was created myself
 * The Contact Me form contains some validation to make sure fields are valid, which I wrote using Javascript and learnt during my placement.
 * font-awesome was used for the social media links at the bottom of the page
+* The sitemap was created at the bottom of the page as the mark scheme specified but is not necessary as this is a single page web app and is easy enough to navigate through.
 
 NOTE: When committing and doing branching process for tablet styles, it didn't work properly and got slightly confused so may not show up on github properly. I then downloaded a GUI called 'sourcetree' to commit my desktop styles branch that I created and didn't show how the branch merged into master visually. Master contains all merged branches but not sure if displayed visually properly.
 #### This website has no console errors and has been run through the HTML validator to make sure it is valid HTML5
