@@ -172,6 +172,6 @@ function initMap() {
     NOTE: The location specified for window.open is relevant to index.html as this is the page the user will be on.
   */
   document.getElementById('downloadCV').addEventListener('click', function() {
-    window.open("misc/Kishans%20CV.pdf");
+    window.open("misc/kishanscv.pdf");
   });
 })();
