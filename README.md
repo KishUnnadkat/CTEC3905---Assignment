@@ -63,6 +63,6 @@ NOTE: When committing and doing branching process for tablet styles, it didn't w
 
 
 ## References
-* W3schools.com. (2017). How To Create a Responsive Top Navigation Menu. [online] Available at: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp [Accessed 6 Dec. 2017].
-* Validator.w3.org. (2017). The W3C Markup Validation Service. [online] Available at: https://validator.w3.org/ [Accessed 6 Dec. 2017].
 * Gandy, D. (2017). Font Awesome, the iconic font and CSS toolkit. [online] Fontawesome.io. Available at: http://fontawesome.io/ [Accessed 9 Dec. 2017].
+* Validator.w3.org. (2017). The W3C Markup Validation Service. [online] Available at: https://validator.w3.org/ [Accessed 6 Dec. 2017].
+* W3schools.com. (2017). How To Create a Responsive Top Navigation Menu. [online] Available at: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp [Accessed 6 Dec. 2017].
