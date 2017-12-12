@@ -241,7 +241,7 @@ p {
 textarea {
   height: 200px;
 }
-input[type=text], textarea {
+input[type=text], input[type=email], textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -249,7 +249,7 @@ input[type=text], textarea {
   margin-top: 5px;
   resize: none;
 }
-input[type=text], textarea:focus {
+input[type=text], input[type=email], textarea:focus {
   outline-color: #18BC9C;
 }
 #submitBtn {
@@ -314,7 +314,7 @@ h3 {
 #locationContainer {
   margin-bottom: 0;
 }
-input[type=text], textarea:focus {
+input[type=text], input[type=email], textarea:focus {
   outline-color: #18BC9C;
 }
 .extraInfo a:hover {

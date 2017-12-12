@@ -32,53 +32,58 @@
     <!-- Portfolio Section -->
     <section id="portfolio">
       <h1 class="alternateSectionHeader">Portfolio</h1>
+      
       <div class="portfolioModal">
         <img id="rockPaperScissorsImg" class="portfolioIcon" src="img/rps.jpg" alt="Rock Paper Scissors Picture">
-        <!-- Portfolio modal done in divs as wouldn't make sense to do it any other elements such as section -->
-        <div class="container-popup popupAnimation" id="modalDialog">
-            <div class="popup">
-              <a href="#" class="closeButton" id="closeBtn"></a>
-              <h1>Rock Paper Scissors</h1>
-              <img src="img/rps.jpg" alt="Rock Paper Scissors Picture" class="modalPicture">
-              <p>
-                This is a Rock Paper Scissors assignment written in Scala. A new language was learnt so I could demonstrate that I could adapt my theory
-                knowledge learnt so far and apply it to a new language. Learning Scala proved to be a challenge as the syntax of the language had to be learnt.
-              </p>
-              <ul>
-                <li>
-                  Download:<a href="misc/rps.rar" class="dialogLink">Download link</a>
-                </li>
-                <li>
-                  Date:<a class="dialogLink">April 2016</a>
-                </li>
-              </ul>
-            </div>
-        </div>
+        <!-- Portfolio modal uses HTML5 dialog which is only supported in chrome and android.
+        Researched on how to mitigate the warning on the validator by importing a polyfill but
+        Polyfill was too long for this webiste. -->
+        <dialog class="container-popup popupAnimation" id="modalDialog">
+          <div class="popup">
+            <a href="#" class="closeButton" id="closeBtn"></a>
+            <h1>Rock Paper Scissors</h1>
+            <img src="img/rps.jpg" alt="Rock Paper Scissors Picture" class="modalPicture">
+            <p>
+              This is a Rock Paper Scissors assignment written in Scala. A new language was learnt so I could demonstrate that I could adapt my theory
+              knowledge learnt so far and apply it to a new language. Learning Scala proved to be a challenge as the syntax of the language had to be learnt.
+            </p>
+            <ul>
+              <li>
+                Download:<a href="misc/rps.rar" class="dialogLink">Download link</a>
+              </li>
+              <li>
+                Date:<a class="dialogLink">April 2016</a>
+              </li>
+            </ul>
+          </div>
+        </dialog>
       </div>
       
       <div class="portfolioModal">
         <img id="computerScienceModuleChooserImg" class="portfolioIcon" src="img/modulechooser.jpg" alt="Computer Science Module Chooser Picture">
-        <!-- Portfolio modal done in divs as wouldn't make sense to do it any other elements such as section -->
-        <div class="container-popup popupAnimation" id="modalDialog1">
-            <div class="popup">
-              <a href="#" class="closeButton" id="closeBtn1"></a>
-              <h1>Computer Science Module Chooser</h1>
-              <img src="img/modulechooser.jpg" alt="Computer Science Module Chooser Picture" class="modalPicture">
-              <p>
-                This is a Module Chooser for Computer Science Students at De-Montfort University.
-                This assignment was written in Java where Model-View-Controller (MVC) was adopted.
-              </p>
-              <ul>
-                <li>
-                  Download:<a href="misc/modulechooser.rar" class="dialogLink">Download link</a>
-                </li>
-                <li>
-                  Date:<a class="dialogLink">April 2016</a>
-                </li>
-              </ul>
-            </div>
+        <!-- Portfolio modal uses HTML5 dialog which is only supported in chrome and android.
+        Researched on how to mitigate the warning on the validator by importing a polyfill but
+        Polyfill was too long for this webiste. -->
+        <dialog class="container-popup popupAnimation" id="modalDialog1">
+          <div class="popup">
+            <a href="#" class="closeButton" id="closeBtn1"></a>
+            <h1>Computer Science Module Chooser</h1>
+            <img src="img/modulechooser.jpg" alt="Computer Science Module Chooser Picture" class="modalPicture">
+            <p>
+              This is a Module Chooser for Computer Science Students at De-Montfort University.
+              This assignment was written in Java where Model-View-Controller (MVC) was adopted.
+            </p>
+            <ul>
+              <li>
+                Download:<a href="misc/modulechooser.rar" class="dialogLink">Download link</a>
+              </li>
+              <li>
+                Date:<a class="dialogLink">April 2016</a>
+              </li>
+            </ul>
           </div>
-        </div>
+        </dialog>
+      </div>
     </section>
     
     <!-- About Me section -->
@@ -94,7 +99,7 @@
       <h1 class="alternateSectionHeader">Contact Me</h1>
       <form>
         <input type="text" id="name" placeholder="Name">
-        <input type="text" id="email" placeholder="Email Address">
+        <input type="email" id="email" placeholder="Email Address">
         <textarea id="message" name="message" placeholder="Message"></textarea>
         <p id="customMessage"></p>                                                     <!-- blank p tag which shows error message using Javascript if blank fields -->
         <input id="submitBtn" type="button" value="Submit">                            <!-- Currently the type of element is 'button' but if form had to submit, it would be 'submit' -->
