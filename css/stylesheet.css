@@ -70,6 +70,7 @@ h1 {
 
 /* Picture With image and name styles defined here */
 .pictureWithName {
+  position: relative;
   height: 30%;
   text-align: center;
   background: url("../img/maindisplay.jpg") no-repeat;
@@ -98,6 +99,24 @@ h1 {
 .headerAnimation {
   animation-name: headerAnimation;
   animation-duration: 2s;
+}
+.helicopter {
+  position: absolute;
+  width: 10%;
+  left: 0;
+  bottom: 0;
+  animation-name: helicopterAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes helicopterAnimation {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(1000%);
+  }
 }
 
 /* Portfolio styles here */
