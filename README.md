@@ -48,13 +48,18 @@ NOTE: When committing and doing branching process for tablet styles, it didn't w
 - Evidence of mobile testing ![Evidence of user testing for mobile](img/mobiletesting.gif "Evidence of User Testing for mobile")
 - Evidence of tablet testing ![Evidence of user testing for tablet](img/tablettesting.gif "Evidence of User Testing for tablet")
 - Evidence of desktop testing ![Evidence of user testing for desktop](img/desktoptesting.gif "Evidence of User Testing for desktop")
+- NOTE: The user test was done by my sister recorded on my laptop
 
 
 ### When writing the function to see if the fields are blank or contain invalid characters the following combinations were tested
+#### The message field can contain any characters as the user may want to enter other characters
 - Typing 'Kishan Unnadkat' as name, 'P14176943@my365.dmu.ac.uk' as email, 'Testing' as message    -> Valid
 - Typing 'P14176943' as name, 'P14176943@my365.dmu.ac.uk' as email, 'P14176943' as message        -> Valid
+- Typing 'Testing' as name, 'P14176943@my365.dmu.ac.uk' as email, '!@£$%^&*()_' as message        -> Valid
 - Typing '!@£$%^&*()_' as name, '!@£$%^&*()_' as email, '!@£$%^&*()_' as message                  -> Invalid
 - Typing '!@£$%^&*()_' as name, 'P14176943@my365.dmu.ac.uk' as email, 'Testing' as message        -> Invalid
+- Typing 'Testing' as name, '!@£$%^&*()_' as email, 'Testing' as message                          -> Invalid
+
 
 ### Other various testing
 - Resizing at each breakpoint works (768px and 1250px)
