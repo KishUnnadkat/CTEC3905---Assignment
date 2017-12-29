@@ -48,6 +48,7 @@ NOTE: When committing and doing branching process for tablet styles, it didn't w
 - Evidence of mobile testing ![Evidence of user testing for mobile](img/mobiletesting.gif "Evidence of User Testing for mobile")
 - Evidence of tablet testing ![Evidence of user testing for tablet](img/tablettesting.gif "Evidence of User Testing for tablet")
 - Evidence of desktop testing ![Evidence of user testing for desktop](img/desktoptesting.gif "Evidence of User Testing for desktop")
+- NOTE: The gif images may not load properly on the readme file on github as the files are quite large, to view user testing properly, view the gifs in the img directory.
 - NOTE: The user test was done by my sister recorded on my laptop
 
 
